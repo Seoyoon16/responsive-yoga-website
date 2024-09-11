@@ -1,153 +1,256 @@
-@media (min-width: 769px) {
+/* @media (min-width: 769px) { */
 
-    /* Stili per desktop e laptop */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5F0FF;
+}
+
+/* ARTICLE SECTION */
+
+.article-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10%;
+}
+
+.article {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.article h3 {
+    font-size: 3em;
+    padding-right: 30%;
+    margin-bottom: 5%;
+}
+
+.article p {
+    font-size: 1em;
+    margin-bottom: 2%;
+    padding-right: 30%;
+}
+
+.article button {
+    font-size: 1em;
+    padding: 10px 20px;
+    background-color: #007bff;
+}
+
+.article-images {
+    position: relative;
+    width: 40%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+#photo1 {
+    margin-bottom: -30%;
+}
+
+.article-images img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* PICTURES SECTION */
+
+.pictures {
+    margin-top: 5%;
+    text-align: center;
+}
+
+#pictures-subtitle {
+    font-size: 2em;
+    margin-top: 30%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+#pic-subtitle {
+    background: linear-gradient(to right, #FF52AF, #9F53FF);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.pictures1 {
+    display: flex;
+    justify-content: center;
+    margin: 2% 10%;
+}
+
+.pictures2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 10%;
+}
+
+.pictures1 img .pictures2 img {
+    max-width: 80%;
+}
+
+
+/* SUBSCRIBE SECTION */
+
+.subscribe {
+    background: linear-gradient(to right, #FF52AF, #9F53FF);
+    border-radius: 5%;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    margin: 5% 12%;
+}
+
+#subscribe-subtitle {
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+#subscribe-paragraph {
+    padding: 0% 10%;
+    margin-bottom: 4%;
+}
+
+#subscribe-button {
+    display: flex;
+    /* Usa Flexbox per disporre gli elementi in linea */
+    align-items: center;
+    /* Allinea verticalmente gli elementi al centro */
+    background-color: #fff;
+    /* Colore di sfondo bianco */
+    padding: 20px;
+    /* Spazio interno al contenitore */
+    border-radius: 8px;
+    /* Angoli arrotondati del contenitore */
+    margin: 0 auto;
+    /* Centra il contenitore orizzontalmente */
+    max-width: 500px;
+    /* Limita la larghezza massima del contenitore */
+}
+
+#subscribe-button p {
+    margin: 0 20px 0 0;
+    /* Spazio a destra del testo del pulsante */
+    color: #333;
+    /* Colore del testo del pulsante */
+}
+
+#subscribe-button button {
+    background-color: #007bff;
+    /* Colore di sfondo del pulsante */
+    color: #fff;
+}
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #14092A;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#footer-subtitle {
+    background: linear-gradient(to right, #FF52AF, #9F53FF);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* CSS per l' applicazione del colore al subtile */
+
+
+    text-align: left;
+    margin-right: 40%;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+#footer-text {
+    margin-right: 40%;
+}
+
+.footer-1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10%;
+    row-gap: 40%;
+}
+
+.grid-item {
+    color: white;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.grid-item-text {
+    color: #A197B4;
+    text-align: left;
+}
+
+#footer-hr {
+    margin-bottom: 5%;
+    margin-top: 7%;
+}
+
+.footer-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+.footer-social {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social li {
+    margin: 0 10px;
+}
+
+.footer-2 p {
+    margin: 0;
+    color: #A197B4;
+}
+
+@media (prefers-color-scheme: dark) {
     body {
-        font-size: 16px;
-        background-color: #F5F0FF;
-    }
-
-    .article-images {
-        float: right;
-    }
-
-    .article {
-        display: flex;
-    }
-
-
-    /* PICTURES SECTION */
-
-    .pictures1 {
-        display: flex;
-        clear: both;
-    }
-
-    .pictures1 img {
-        padding: 0 0;
-    }
-
-    .pictures2 {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 5%;
-    }
-
-    /* SUBSCRIBE SECTION */
-
-    .subscribe {
-        background: linear-gradient(to right, #FF52AF, #9F53FF);
-        border-radius: 5%;
-        color: white;
-        text-align: center;
-    }
-
-    #subscribe-button {
-        display: flex;
-        /* Usa Flexbox per disporre gli elementi in linea */
-        align-items: center;
-        /* Allinea verticalmente gli elementi al centro */
-        background-color: #fff;
-        /* Colore di sfondo bianco */
-        padding: 20px;
-        /* Spazio interno al contenitore */
-        border-radius: 8px;
-        /* Angoli arrotondati del contenitore */
-        margin: 0 auto;
-        /* Centra il contenitore orizzontalmente */
-        max-width: 500px;
-        /* Limita la larghezza massima del contenitore */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Aggiunge un'ombra sottile per un effetto di sollevamento (opzionale) */
-    }
-
-    #subscribe-button p {
-        margin: 0 20px 0 0;
-        /* Spazio a destra del testo del pulsante */
-        color: #333;
-        /* Colore del testo del pulsante */
-    }
-
-    #subscribe-button button {
-        background-color: #007bff;
-        /* Colore di sfondo del pulsante */
-        color: #fff;
-    }
-
-
-
-
-
-
-    /* FOOTER */
-
-    footer {
         background-color: #14092A;
     }
 
-    #footer-subtitle {
-        background: linear-gradient(to right, #FF52AF, #9F53FF);
-        font-weight: bold;
-        /* Opzionale: per un testo più spesso */
-        -webkit-background-clip: text;
-        /* Per Safari e Chrome */
-        background-clip: text;
-        /* Per altri browser moderni */
-        color: transparent;
-        /* Rende il colore del testo trasparente, permettendo al gradiente di essere visibile */
-        text-align: center;
-        /* Opzionale: per centrare il testo */
+    #pictures-subtitle {
+        color: #d1c0f1;
     }
 
-    .grid-item-text {
-        color: #A197B4;
+    .article {
+        color: #d1c0f1;
     }
-
-    .footer-1 {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, auto);
-    }
-
-    .grid-item {
-        color: white;
-        border: 1px solid #ddd;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .grid-item-text {
-        color: #A197B4;
-        border: 1px solid #ddd;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .footer-2 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .footer-social {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .footer-social li {
-        margin: 0 10px;
-    }
-
-    .footer-2 p {
-        margin: 0;
-        color: #A197B4;
-    }
+}
 
 }

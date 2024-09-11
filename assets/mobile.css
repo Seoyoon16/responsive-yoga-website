@@ -1,6 +1,143 @@
+/* Media query per tablet e smartphone */
 @media (max-width: 768px) {
-
-    /* Stili per dispositivi mobili */
-    body {
-        font-size: 14px;
+    .pictures {
+        margin-top: 20%;
     }
+
+    /* FOOTER */
+
+    /* Stili di base per il footer */
+    footer {
+        background-color: #14092A;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    /* Stili per il subtile del footer */
+    #footer-subtitle {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        font-weight: bold;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-align: left;
+        margin-right: 40%;
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+
+    /* Stili per il testo del footer */
+    #footer-text {
+        margin-right: 40%;
+    }
+
+    /* Stili per la sezione 1 del footer */
+    .footer-1 {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5%;
+    }
+
+    /* Stili per il contenitore della griglia */
+    .grid-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 10%;
+        row-gap: 40%;
+    }
+
+    /* Stili per gli elementi della griglia */
+    .grid-item {
+        color: white;
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    .grid-item-text {
+        color: #A197B4;
+        text-align: left;
+    }
+
+    /* Stili per la linea orizzontale */
+    #footer-hr {
+        margin-bottom: 5%;
+        margin-top: 7%;
+    }
+
+    /* Stili per la sezione 2 del footer */
+    .footer-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .footer-social {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-social li {
+        margin: 0 10px;
+    }
+
+    .footer-2 p {
+        margin: 0;
+        color: #A197B4;
+    }
+
+    /* Media Queries per Schermi Piccoli */
+    @media (max-width: 768px) {
+        footer {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        .footer-1 {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .grid-container {
+            grid-template-columns: 1fr;
+            /* Colonna unica */
+            grid-template-rows: repeat(4, auto);
+            /* Righe automatiche per ogni elemento */
+            gap: 20px;
+            /* Distanza tra righe */
+        }
+
+        .grid-item,
+        .grid-item-text {
+            text-align: center;
+            margin-right: 0;
+            /* Rimuovi il margine a destra */
+        }
+
+        #footer-subtitle {
+            margin-right: 0;
+            text-align: center;
+        }
+
+        #footer-text {
+            margin-right: 0;
+            text-align: center;
+        }
+
+        .footer-2 {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-social li {
+            margin: 5px 0;
+            /* Spazio tra le icone sui piccoli schermi */
+        }
+    }
+
+}
