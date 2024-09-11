@@ -9,14 +9,13 @@ body {
 
 .article-section {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     margin: 0 10%;
 }
 
 .article {
     flex: 1;
-    padding-right: 20px;
 }
 
 .article h3 {
@@ -33,26 +32,42 @@ body {
 
 .article button {
     font-size: 1em;
-    padding: 10px 20px;
     background-color: #007bff;
 }
 
+/*
 .article-images {
-    position: relative;
-    width: 40%;
-    height: auto;
-    flex-shrink: 0;
-}
-
-#photo1 {
-    margin-bottom: -30%;
+    display: flex;
+    flex-direction: column;
 }
 
 .article-images img {
-    position: relative;
     max-width: 100%;
     height: auto;
+} */
+
+.article-images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
 }
+
+/* STILI PER LE IMMAGINI */
+.article-images img {
+    max-width: 80%;
+    height: auto;
+    margin-top: -20%;
+    position: relative;
+    z-index: 1;
+}
+
+#img1 img {
+    margin-top: 0;
+    z-index: 2;
+}
+
+
 
 
 
@@ -86,20 +101,24 @@ body {
 
 .pictures1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin: 2% 10%;
+    width: 80%;
+    height: auto;
 }
 
 .pictures2 {
     display: flex;
     justify-content: space-between;
     margin: 0% 10%;
+    width: 80%;
+    height: auto;
 }
 
-.pictures1 img .pictures2 img {
-    max-width: 80%;
+.pictures img {
+    max-width: 100%;
+    height: auto;
 }
-
 
 /* SUBSCRIBE SECTION */
 
