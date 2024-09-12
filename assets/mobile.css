@@ -9,251 +9,9 @@
         margin: 0 2%;
     }
 
-    /* ARTICLE SECTION */
+    /*DARK MODE */
 
-    .article {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .article h3 {
-        font-size: 2em;
-        font-weight: normal;
-        margin-bottom: 5%;
-    }
-
-    .article p {
-        font-size: 1em;
-        margin-bottom: 2%;
-    }
-
-    #button {
-        background: linear-gradient(to right, #FF52AF, #9F53FF);
-        color: #fff;
-        border-radius: 20px;
-        padding: 2% 10%;
-        margin-top: 5%;
-    }
-
-    /*article images settings */
-
-    .article-images {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        margin: 0 auto;
-    }
-
-    .article-images img {
-        display: none;
-        max-width: 60%;
-        height: auto;
-        position: absolute;
-        z-index: 1;
-    }
-
-    #img1 img {
-        margin-top: 0;
-        z-index: 2;
-        margin-top: 30%;
-    }
-
-    /* PICTURES SECTION */
-
-    .pictures {
-        margin-top: 5%;
-        text-align: center;
-    }
-
-    #pictures-subtitle {
-        font-size: 2em;
-        font-weight: normal;
-    }
-
-    #pic-subtitle {
-        background: linear-gradient(to right, #FF52AF, #9F53FF);
-        font-weight: bold;
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        font-size: 2rem;
-        font-weight: normal;
-        text-align: center;
-    }
-
-    .pictures1 {
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 40%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    .pictures1-images {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .pictures img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .pictures1 img#foto1 {
-        order: 1;
-    }
-
-    .pictures1>div {
-        order: 0;
-    }
-
-    .pictures2 {
-        flex-direction: column;
-        width: 80%;
-        height: auto;
-        display: none;
-    }
-
-    .pictures img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    #button-1 {
-        background: linear-gradient(to right, #FF52AF, #9F53FF);
-        color: #fff;
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-    }
-
-    /* SUBSCRIBE SECTION */
-
-    .subscribe {
-        background: linear-gradient(to right, #FF52AF, #9F53FF);
-        border-radius: 20px;
-        color: white;
-        text-align: center;
-        padding: 2%;
-    }
-
-    #subscribe-subtitle {
-        font-size: 2.5em;
-        font-weight: normal;
-    }
-
-    #subscribe-paragraph {
-        margin-bottom: 4%;
-    }
-
-    /*
-    #subscribe-button {
-        display: block;
-        align-items: center;
-        background-color: #fff;
-        border-radius: 20px;
-        margin: 0 0;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-
-    #subscribe-button p {
-        margin: 0 20px 0 0;
-        color: #333;
-    }
-
-    #subscribe-button button {
-        background: linear-gradient(to right, #FF52AF, #9F53FF);
-        color: #fff;
-        border-radius: 20px;
-        vertical-align: middle;
-        margin: 1% 1%;
-        padding: 3% 6%;
-    } */
-
-
-    /* FOOTER */
-
-    footer {
-        background-color: #14092A;
-    }
-
-    #footer-subtitle {
-        background: linear-gradient(to right, #FF52AF, #9F53FF);
-        font-weight: bold;
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        /* CSS per l' applicazione del colore al subtile */
-
-
-        text-align: left;
-        font-size: 1.5rem;
-        font-weight: normal;
-    }
-
-
-    .footer-1 {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    /* .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat (8, auto);
-        gap: 2%;
-        row-gap: 4%;
-    } */
-
-    .grid-item {
-        color: white;
-        text-align: left;
-        font-size: 1.2rem;
-    }
-
-    .grid-item-text {
-        color: #A197B4;
-        text-align: left;
-    }
-
-    #footer-hr {
-        margin-bottom: 7%;
-        margin-top: 7%;
-    }
-
-    .footer-2 {
-        text-align: center;
-    }
-
-    .footer-social {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-        gap: 1%;
-        padding: 3% 0%;
-    }
-
-    .footer-social li {
-        display: inline;
-        margin: 0 10px;
-    }
-
-    .footer-2 p {
-        margin: 0;
-        color: #A197B4;
-        padding: 5%;
-    }
-
-    @media (prefers-color-scheme: dark) {
+    /*@media (prefers-color-scheme: dark) {
         body {
             background-color: #14092A;
         }
@@ -265,6 +23,170 @@
         .article {
             color: #d1c0f1;
         }
+    } */
+
+    /* ARTICLE SECTION */
+
+    .article-section {
+        display: block;
+        text-align: center;
     }
+
+    .article h3 {
+        font-size: 2em;
+        margin-bottom: 5%;
+    }
+
+    .article p {
+        font-size: 1em;
+        margin-bottom: 2%;
+    }
+
+    .article button {
+        font-size: 1em;
+        background-color: #007bff;
+    }
+
+    #button {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        color: #fff;
+        border-radius: 20px;
+        padding: 3% 3%;
+        margin-top: 5%;
+    }
+
+    /* article images section */
+
+    .article-images {
+        display: none;
+    }
+
+    /* PICTURES SECTION */
+
+    .pictures1 {
+        display: none;
+    }
+
+    .pictures2 {
+        display: none;
+    }
+
+    /* SUBSCRIBE SECTION */
+
+    .subscribe {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        border-radius: 20px;
+        color: white;
+        text-align: center;
+        padding: 2% 2%;
+    }
+
+    #subscribe-subtitle {
+        font-size: 1.5em;
+        font-weight: normal;
+    }
+
+    #subscribe-paragraph {
+        margin-bottom: 3%;
+    }
+
+    #subscribe-button {
+        display: inline-flex;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 20px;
+        margin: 0 auto;
+        max-width: 500px;
+        margin-bottom: 3%;
+        width: 80%;
+        padding: 1% 2%;
+    }
+
+    #subscribe-button p {
+        margin: 0 10px 0 0;
+        color: #333;
+    }
+
+    #subscribe-button button {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        color: #fff;
+        border-radius: 20px;
+        vertical-align: middle;
+        margin: 1% 1%;
+        padding: 3% 6%;
+    }
+
+    /* FOOTER SECTION */
+
+    footer {
+        background-color: #14092A;
+        color: #A197B4;
+    }
+
+    #footer-subtitle {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        font-weight: bold;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        /* CSS per l' applicazione del colore DIVERSIFICATO al subtile */
+
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+
+    .footer-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* Una colonna per mobile */
+        grid-template-rows: repeat(8, auto);
+        /* Otto righe per gli elementi della griglia */
+        gap: 10px;
+    }
+
+    .grid-item,
+    .grid-item-text {
+        text-align: center;
+        font-size: 1rem;
+        /* Riduce la dimensione del font per dispositivi mobili */
+    }
+
+    #footer-subtitle {
+        font-size: 1.2rem;
+        /* Riduce la dimensione del font del sottotitolo per dispositivi mobili */
+        text-align: center;
+    }
+
+    #footer-text {
+        text-align: center;
+    }
+
+    .footer-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin-bottom: 10px;
+    }
+
+    .footer-social li {
+        margin: 0 5px;
+    }
+
+    .footer-2 p {
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: center;
+    }
+
 
 }
