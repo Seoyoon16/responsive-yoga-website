@@ -1,53 +1,217 @@
-/* Media query per tablet e smartphone */
 @media (max-width: 768px) {
-    .pictures {
-        margin-top: 20%;
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #F5F0FF;
     }
+
+    main {
+        margin: 0 2%;
+    }
+
+    /* ARTICLE SECTION */
+
+    .article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .article h3 {
+        font-size: 2em;
+        font-weight: normal;
+        margin-bottom: 5%;
+    }
+
+    .article p {
+        font-size: 1em;
+        margin-bottom: 2%;
+    }
+
+    #button {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        color: #fff;
+        border-radius: 20px;
+        padding: 2% 10%;
+        margin-top: 5%;
+    }
+
+    /*article images settings */
+
+    .article-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .article-images img {
+        display: none;
+        max-width: 60%;
+        height: auto;
+        position: absolute;
+        z-index: 1;
+    }
+
+    #img1 img {
+        margin-top: 0;
+        z-index: 2;
+        margin-top: 30%;
+    }
+
+    /* PICTURES SECTION */
+
+    .pictures {
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    #pictures-subtitle {
+        font-size: 2em;
+        font-weight: normal;
+    }
+
+    #pic-subtitle {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        font-weight: bold;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 2rem;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .pictures1 {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .pictures1-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pictures img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .pictures1 img#foto1 {
+        order: 1;
+    }
+
+    .pictures1>div {
+        order: 0;
+    }
+
+    .pictures2 {
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+        display: none;
+    }
+
+    .pictures img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #button-1 {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        color: #fff;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    /* SUBSCRIBE SECTION */
+
+    .subscribe {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        border-radius: 20px;
+        color: white;
+        text-align: center;
+        padding: 2%;
+    }
+
+    #subscribe-subtitle {
+        font-size: 2.5em;
+        font-weight: normal;
+    }
+
+    #subscribe-paragraph {
+        margin-bottom: 4%;
+    }
+
+    /*
+    #subscribe-button {
+        display: block;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 20px;
+        margin: 0 0;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #subscribe-button p {
+        margin: 0 20px 0 0;
+        color: #333;
+    }
+
+    #subscribe-button button {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        color: #fff;
+        border-radius: 20px;
+        vertical-align: middle;
+        margin: 1% 1%;
+        padding: 3% 6%;
+    } */
+
 
     /* FOOTER */
 
-    /* Stili di base per il footer */
     footer {
         background-color: #14092A;
-        padding-left: 10%;
-        padding-right: 10%;
     }
 
-    /* Stili per il subtile del footer */
     #footer-subtitle {
         background: linear-gradient(to right, #FF52AF, #9F53FF);
         font-weight: bold;
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+        /* CSS per l' applicazione del colore al subtile */
+
+
         text-align: left;
-        margin-right: 40%;
         font-size: 1.5rem;
         font-weight: normal;
     }
 
-    /* Stili per il testo del footer */
-    #footer-text {
-        margin-right: 40%;
-    }
 
-    /* Stili per la sezione 1 del footer */
     .footer-1 {
         display: flex;
         justify-content: space-between;
-        padding-top: 5%;
     }
 
-    /* Stili per il contenitore della griglia */
-    .grid-container {
+    /* .grid-container {
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-        gap: 10%;
-        row-gap: 40%;
-    }
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (8, auto);
+        gap: 2%;
+        row-gap: 4%;
+    } */
 
-    /* Stili per gli elementi della griglia */
     .grid-item {
         color: white;
         text-align: left;
@@ -59,19 +223,13 @@
         text-align: left;
     }
 
-    /* Stili per la linea orizzontale */
     #footer-hr {
-        margin-bottom: 5%;
+        margin-bottom: 7%;
         margin-top: 7%;
     }
 
-    /* Stili per la sezione 2 del footer */
     .footer-2 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 5%;
-        padding-bottom: 5%;
+        text-align: center;
     }
 
     .footer-social {
@@ -79,64 +237,33 @@
         list-style: none;
         margin: 0;
         padding: 0;
+        justify-content: center;
+        gap: 1%;
+        padding: 3% 0%;
     }
 
     .footer-social li {
+        display: inline;
         margin: 0 10px;
     }
 
     .footer-2 p {
         margin: 0;
         color: #A197B4;
+        padding: 5%;
     }
 
-    /* Media Queries per Schermi Piccoli */
-    @media (max-width: 768px) {
-        footer {
-            padding-left: 5%;
-            padding-right: 5%;
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #14092A;
         }
 
-        .footer-1 {
-            flex-direction: column;
-            align-items: center;
+        #pictures-subtitle {
+            color: #d1c0f1;
         }
 
-        .grid-container {
-            grid-template-columns: 1fr;
-            /* Colonna unica */
-            grid-template-rows: repeat(4, auto);
-            /* Righe automatiche per ogni elemento */
-            gap: 20px;
-            /* Distanza tra righe */
-        }
-
-        .grid-item,
-        .grid-item-text {
-            text-align: center;
-            margin-right: 0;
-            /* Rimuovi il margine a destra */
-        }
-
-        #footer-subtitle {
-            margin-right: 0;
-            text-align: center;
-        }
-
-        #footer-text {
-            margin-right: 0;
-            text-align: center;
-        }
-
-        .footer-2 {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .footer-social li {
-            margin: 5px 0;
-            /* Spazio tra le icone sui piccoli schermi */
+        .article {
+            color: #d1c0f1;
         }
     }
 
