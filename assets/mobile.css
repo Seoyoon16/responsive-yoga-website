@@ -3,6 +3,7 @@
     body {
         font-family: 'Poppins', sans-serif;
         background-color: #F5F0FF;
+        color: #220953;
     }
 
     main {
@@ -11,7 +12,7 @@
 
     /*DARK MODE */
 
-    /*@media (prefers-color-scheme: dark) {
+    @media (prefers-color-scheme: dark) {
         body {
             background-color: #14092A;
         }
@@ -23,7 +24,7 @@
         .article {
             color: #d1c0f1;
         }
-    } */
+    }
 
     /* ARTICLE SECTION */
 
@@ -35,11 +36,12 @@
     .article h3 {
         font-size: 2em;
         margin-bottom: 5%;
+        font-weight: normal;
     }
 
     .article p {
         font-size: 1em;
-        margin-bottom: 2%;
+        margin-bottom: 5%;
     }
 
     .article button {
@@ -52,23 +54,126 @@
         color: #fff;
         border-radius: 20px;
         padding: 3% 3%;
-        margin-top: 5%;
+        margin-bottom: 30%;
     }
 
     /* article images section */
 
     .article-images {
-        display: none;
+        display: flex;
+        justify-content: center;
+        /* Centro le immagini orizzontalmente */
+        align-items: center;
+        /* Allinea le immagini in alto */
+        flex-direction: column;
+        /* Imposta le immagini in colonna */
+        position: relative;
+        /* Necessario per posizionare la seconda immagine */
+    }
+
+
+    .article-images img {
+        max-width: 100%;
+        width: 75%;
+        height: auto;
+        /* Assicura che le immagini non superino la larghezza del contenitore */
+    }
+
+    #img1 {
+        position: relative;
+        /* Necessario per posizionare la seconda immagine */
+    }
+
+    #img1 img {
+        position: relative;
+        z-index: 1;
+        /* Assicura che la prima immagine sia sopra */
+    }
+
+    .article-images img:last-of-type {
+        margin-top: -60px;
+        z-index: -2;
+        /* Porta la seconda immagine sotto la prima */
     }
 
     /* PICTURES SECTION */
 
-    .pictures1 {
-        display: none;
+    .pictures {
+        padding: 10% 0;
     }
 
-    .pictures2 {
+    #pictures-subtitle {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        z-index: 200;
+        font-weight: normal;
+        font-size: 2em;
+        /* Assicura che il titolo sia sopra le immagini */
+    }
+
+    #pic-subtitle {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        font-weight: bold;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 3rem;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    #button-1 {
         display: none;
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        color: #fff;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    /* pictures part 1 */
+
+    #pc1 {
+        padding-top: 10%;
+    }
+
+    .pictures1 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pictures1-images {
+        margin-top: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2%;
+    }
+
+    .pictures1-images img {
+        max-width: 100%;
+        width: 45%;
+        height: auto;
+    }
+
+    /* pictures part 2 */
+
+    .pictures2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pictures2 img {
+        max-width: 100%;
+        width: 85%;
+        height: auto;
+        padding: 2%;
     }
 
     /* SUBSCRIBE SECTION */
@@ -79,6 +184,7 @@
         color: white;
         text-align: center;
         padding: 2% 2%;
+        margin: 15% 0;
     }
 
     #subscribe-subtitle {
@@ -90,7 +196,7 @@
         margin-bottom: 3%;
     }
 
-    #subscribe-button {
+    /*#subscribe-button {
         display: inline-flex;
         align-items: center;
         background-color: #fff;
@@ -114,6 +220,42 @@
         vertical-align: middle;
         margin: 1% 1%;
         padding: 3% 6%;
+    } */
+
+    #subscribe-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Stile per il contenitore del paragrafo */
+    #paragraph-container {
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        color: #A197B4;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Stile per il contenitore del pulsante */
+    #button-container {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        color: #fff;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Stile per il pulsante */
+    #button {
+        padding: 4% 10%;
+        background-color: white;
+        /* Sfondo bianco per il pulsante */
+        color: blue;
+        border: none;
     }
 
     /* FOOTER SECTION */
@@ -121,6 +263,7 @@
     footer {
         background-color: #14092A;
         color: #A197B4;
+        padding: 4% 4%;
     }
 
     #footer-subtitle {
@@ -129,41 +272,37 @@
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-        /* CSS per l' applicazione del colore DIVERSIFICATO al subtile */
-
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: normal;
+        text-align: left;
     }
 
     .footer-1 {
         flex-direction: column;
-        align-items: center;
     }
 
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
-        /* Una colonna per mobile */
         grid-template-rows: repeat(8, auto);
-        /* Otto righe per gli elementi della griglia */
-        gap: 10px;
+        gap: 10%;
+        margin-bottom: 40%;
     }
 
-    .grid-item,
-    .grid-item-text {
-        text-align: center;
-        font-size: 1rem;
-        /* Riduce la dimensione del font per dispositivi mobili */
-    }
-
-    #footer-subtitle {
+    .grid-item {
+        text-align: left;
         font-size: 1.2rem;
-        /* Riduce la dimensione del font del sottotitolo per dispositivi mobili */
-        text-align: center;
+        color: white;
+        padding-bottom: 2%;
     }
 
-    #footer-text {
-        text-align: center;
+    .grid-item-text {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    #footer-hr {
+        margin: 20px 0;
     }
 
     .footer-2 {
@@ -179,7 +318,11 @@
     }
 
     .footer-social li {
-        margin: 0 5px;
+        margin: 0 2%;
+    }
+
+    ul {
+        padding-inline-start: 0;
     }
 
     .footer-2 p {
