@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./desktop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/Vectores.png" type="image/png">
+    <title>Yoga Website</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo"><img src="./assets/light/Yoga.png" alt="logo-top"></div>
+        <div id="nav-container">
+            <div id="nav-btn-container">
+                <nav id="nav-top-desktop">
+                    <a href="#">Home</a>
+                    <a href="#">Health</a>
+                    <a href="#">Routine</a>
+                    <a href="#">Follow</a>
+                </nav>
+                <!-- mode changing -->
+                <div class="mode-toggle">
+                    <input type="checkbox" id="modeToggle" hidden>
+                    <label for="modeToggle">
+                        <img id="moon" src="./assets/light/ri_moon-line.png" alt="moon" class="icon light-mode">
+                        <img id="sun" src="./assets/dark/ri_sun-line.png" alt="sun" class="icon dark-mode">
+                    </label>
+                </div>
+                <!-- mobile navigation -->
+                <div id="nav-icon-container" class="nav-mobile">
+                    <input type="checkbox" id="navbox" hidden>
+                    <label for="navbox" class="nav-btn">
+                        <img id="nav-btn-light" src="./assets/light/ri_apps-2-line.png" alt="nav-btn-light">
+                        <img id="nav-btn-dark" src="./assets/dark/ri_apps-2-line.png" alt="nav-btn-dark">
+                    </label>
+                    <ul id="nav-items">
+                        <label for="navbox">
+                            <img id="x-light" src="./assets/light/ri_close-fill.png" alt="x">
+                            <img id="x-dark" src="./assets/dark/ri_close-fill.png" alt="x">
+                        </label>
+                        <li>
+                            <a id="current" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Health</a>
+                        </li>
+                        <li>
+                            <a href="#">Routine</a>
+                        </li>
+                        <li>
+                            <a href="#">Follow</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="part1">
+            <div id="part1-title-container">
+                <h1>Choose Your<br> Best <span id="yoga">Yoga</span><br> <span id="teacher">Teacher</span></h1>
+            </div>
+            <!-- <div id="star"><img src="assets/dark/home-star.png" alt="star"></div> -->
+            <!-- <div id="circle"><img src="assets/dark/Clip path group.png" alt="circle"></div> -->
+            <!-- <div id="desktop-sign"><img src="assets/light/Vector.png" alt="sign"></div> -->
+            <div id="part1-p-container">
+                <p>Calm your mind and body with the best yoga teachers available, relax your day and stay <span
+                        id="circle">positive.</span></p>
+            </div>
+            <button id="start-btn1" type="button">Get Started Free &rarr;</button>
+            <div id="figures-container">
+                <div id="yoga-class">
+                    <span>300+</span><br>
+                    <span>Yoga Class</span>
+                </div>
+                <div id="participants">
+                    <span>40+</span><br>
+                    <span>participants</span>
+                </div>
+            </div>
+            <div id="main-photo"><img src="./assets/light/home-yoga.png" alt="yoga-woman1"></div>
+        </div>
+
+        <div id="part2">
+            <div id="yoga-light"><img src="./assets/light/Box group list.png" alt="yoga-woman2"></div>
+            <div id="yoga-dark"><img src="./assets/dark/Box group list.png" alt="yoga-woman2-dark"></div>
+            <!-- <div id="glitters"><img src="./assets/light/liststar-2-img.png" alt="glitter"></div> -->
+            <div id="text-container">
+                <p><span id="glitter">Get</span> a list of specific influencers in your niche at your fingertips so you
+                    can focus on managing your
+                    status.</p>
+            </div>
+            <div id="next-btn"><a href="#"><img src="./assets/light/Button link list.png" alt="next-btn"></a></div>
+        </div>
+
+        <div id="part3">
+            <div id="part3-h2-container">
+                <h2>Bring Happiness To Good Health!</h2>
+            </div>
+            <div>
+                <p>
+                    If you take care of your good health, take care of your mentality and lead a healthy life with
+                    positive thoughts every day.
+                </p>
+            </div>
+            <button id="start-btn2" type="button">Let's Start &rarr;</button>
+            <div id="part3-img-mobile"><img src="./assets/light/Image group.png" alt="man-workout"></div>
+            <div id="part3-img-mobile-dark"><img src="./assets/dark/Image group.png" alt="man-workout-dark"></div>
+            <!-- <div id="part3-img-desktop"><img src="./assets/light/Image group bigger.png" alt="man-workout-big"></div> -->
+        </div>
+    </main>
+</body>
+
+</html>
