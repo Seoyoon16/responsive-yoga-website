@@ -24,7 +24,12 @@ body:has(#modeToggle:checked) #moon,
 body:has(#modeToggle:checked) #nav-btn-light,
 body:has(#modeToggle:checked) #yoga-light,
 body:has(#modeToggle:checked) #part3-img-mobile,
-body:has(#modeToggle:checked) #x-light {
+body:has(#modeToggle:checked) #x-light,
+body:has(#modeToggle:checked) #photo1,
+body:has(#modeToggle:checked) #yoga-a-light,
+body:has(#modeToggle:checked) #yoga-b-light,
+body:has(#modeToggle:checked) #yoga-c-light,
+body:has(#modeToggle:checked) #yoga-d-light {
     display: none;
 }
 
@@ -32,7 +37,12 @@ body:has(#modeToggle:checked) #sun,
 body:has(#modeToggle:checked) #nav-btn-dark,
 body:has(#modeToggle:checked) #yoga-dark,
 body:has(#modeToggle:checked) #part3-img-mobile-dark,
-body:has(#modeToggle:checked) #x-dark {
+body:has(#modeToggle:checked) #x-dark,
+body:has(#modeToggle:checked) #photo1-dark,
+body:has(#modeToggle:checked) #yoga-a-dark,
+body:has(#modeToggle:checked) #yoga-b-dark,
+body:has(#modeToggle:checked) #yoga-c-dark,
+body:has(#modeToggle:checked) #yoga-d-dark {
     display: inline-block;
 }
 
@@ -46,7 +56,12 @@ body:has(#modeToggle:checked) #part3 p {
 #nav-btn-dark,
 #yoga-dark,
 #part3-img-mobile-dark,
-#x-dark {
+#x-dark,
+#photo1-dark,
+#yoga-a-dark,
+#yoga-b-dark,
+#yoga-c-dark,
+#yoga-d-dark {
     display: none;
 }
 
@@ -221,6 +236,41 @@ body:has(#modeToggle:checked) #glitter::before {
 }
 
 
+/* Aurora's Part */
+#img1,
+#img2 {
+    position: relative;
+}
+
+#img1::after {
+    content: url("./assets/txt1-light.png");
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    z-index: 3;
+}
+
+body:has(#modeToggle:checked) #img1::after {
+    content: url("./assets/txt1-dark.png");
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    z-index: 3;
+}
+
+#img2::before {
+    content: url("./assets/txt2-light.png");
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    z-index: 3;
+}
+
+body:has(#modeToggle:checked) #img2::before {
+    content: url("./assets/txt2-dark.png");
+}
+
+
 /* mobile */
 @media only screen and (max-width: 768px) {
     #nav-top-desktop {
@@ -328,5 +378,345 @@ body:has(#modeToggle:checked) #glitter::before {
         position: absolute;
         top: 100%;
         right: -30%;
+    }
+
+    /* Aurora's Part*/
+    /* ARTICLE SECTION */
+
+    .article-section {
+        display: block;
+        text-align: center;
+    }
+
+    .article h3 {
+        font-size: 2em;
+        margin-bottom: 5%;
+        font-weight: normal;
+        padding: 0 2%;
+    }
+
+    .article p {
+        font-size: 1em;
+        margin-bottom: 5%;
+        padding: 5% 3%;
+    }
+
+    .article button {
+        font-size: 1em;
+        background-color: #007bff;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #button {
+        margin-bottom: 30%;
+        border-radius: 64px;
+        font-size: 1rem;
+        padding: 5% 9%;
+        margin-top: 2%;
+        align-self: center;
+    }
+
+    /* article images section */
+
+    .article-images {
+        display: flex;
+        justify-content: center;
+        /* Centro le immagini orizzontalmente */
+        align-items: center;
+        /* Allinea le immagini in alto */
+        flex-direction: column;
+        /* Imposta le immagini in colonna */
+        position: relative;
+        /* Necessario per posizionare la seconda immagine */
+    }
+
+    .article-images img {
+        max-width: 100%;
+        width: 75%;
+        height: auto;
+        /* Assicura che le immagini non superino la larghezza del contenitore */
+    }
+
+    #img1 {
+        position: relative;
+        /* Necessario per posizionare la seconda immagine */
+    }
+
+    #img1 img {
+        position: relative;
+        z-index: 1;
+        /* Assicura che la prima immagine sia sopra */
+    }
+
+    .article-images img:last-of-type {
+        margin-top: -60px;
+        z-index: -2;
+        /* Porta la seconda immagine sotto la prima */
+    }
+
+    /* PICTURES SECTION */
+
+    .pictures {
+        padding: 10% 0;
+    }
+
+    .h3-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    #pictures-subtitle {
+        font-weight: normal;
+        font-size: 2em;
+        /* Assicura che il titolo sia sopra le immagini */
+        width: 80%;
+        line-height: 150%;
+    }
+
+    #pic-subtitle {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        font-weight: bold;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    #button-1 {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        font-size: 1rem;
+        margin-top: 10%;
+    }
+
+    /* pictures part 1 */
+
+    #pc1 {
+        padding-top: 10%;
+    }
+
+    .pictures1 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pictures1-images {
+        margin-top: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2%;
+    }
+
+    .pictures1-images img {
+        max-width: 100%;
+        width: 45%;
+        height: auto;
+    }
+
+    /* pictures part 2 */
+
+    .pictures2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pictures2 img {
+        max-width: 100%;
+        width: 85%;
+        height: auto;
+        padding: 2%;
+        transform: scale(0.9);
+    }
+
+    /* SUBSCRIBE SECTION */
+
+    .subscribe {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        border-radius: 20px;
+        color: white;
+        text-align: center;
+        margin: 15% 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #subscribe-subtitle {
+        font-size: 1.5em;
+        font-weight: normal;
+        margin: 15% 0 5% 0;
+    }
+
+    #subscribe-paragraph {
+        margin-bottom: 10%;
+        width: 90%;
+    }
+
+    /*#subscribe-button {
+        display: inline-flex;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 20px;
+        margin: 0 auto;
+        max-width: 500px;
+        margin-bottom: 3%;
+        width: 80%;
+        padding: 1% 2%;
+    }
+
+    #subscribe-button p {
+        margin: 0 10px 0 0;
+        color: #333;
+    }
+
+    #subscribe-button button {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        color: #fff;
+        border-radius: 20px;
+        vertical-align: middle;
+        margin: 1% 1%;
+        padding: 3% 6%;
+    } */
+
+    #subscribe-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Stile per il contenitore del paragrafo */
+    #paragraph-container {
+        background-color: rgb(255, 255, 255);
+        border-radius: 60px;
+        color: #A197B4;
+        text-align: center;
+        width: 70vw;
+        box-sizing: border-box;
+        margin-bottom: 5%;
+    }
+
+    #paragraph-button {
+        padding: 7% 10%;
+        width: 100%;
+        text-align: left;
+        font-size: 0.7rem;
+    }
+
+    /* Stile per il contenitore del pulsante */
+    #button-container {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        color: #fff;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #button-sub {
+        border-radius: 64px;
+        font-size: 1rem;
+        margin-bottom: 20%;
+        width: 100%;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* FOOTER SECTION */
+
+    footer {
+        background-color: #14092A;
+        color: #A197B4;
+        padding: 4% 4%;
+    }
+
+    #footer-subtitle {
+        background: linear-gradient(73.19deg, #FF52AF 20%, #9F53FF 40%);
+        font-weight: bold;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 1.2rem;
+        font-weight: normal;
+        text-align: left;
+        margin: 10% 0 5% 0;
+    }
+
+    .footer-1 {
+        flex-direction: column;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, auto);
+        gap: 10%;
+        margin-bottom: 40%;
+    }
+
+    .grid-item {
+        text-align: left;
+        font-size: 1.2rem;
+        color: white;
+        margin-bottom: 5%;
+    }
+
+    .grid-item-text {
+        text-align: left;
+        font-size: 1rem;
+        width: 70%;
+    }
+
+    .cont4 {
+        margin-bottom: 10%;
+    }
+
+    #footer-hr {
+        border: 0;
+        height: 1px;
+        background-color: #A197B4;
+    }
+
+    .footer-2 {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin-bottom: 10%;
+    }
+
+    .footer-social li {
+        margin: 0 2%;
+    }
+
+    ul {
+        padding-inline-start: 0;
+    }
+
+    .footer-2 p {
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3%;
     }
 }

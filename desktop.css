@@ -264,4 +264,341 @@
         width: 100%;
         object-fit: contain;
     }
+
+
+    /* Aurora's part */
+    /* ARTICLE SECTION */
+    .article-section {
+        display: flex;
+        margin-top: 10%;
+    }
+
+    .article {
+        padding-left: 15%;
+    }
+
+    .article h3 {
+        font-size: 4em;
+        padding-right: 30%;
+        margin-bottom: 5%;
+    }
+
+    .article p {
+        font-size: 1em;
+        margin-bottom: 2%;
+        padding-right: 30%;
+        width: 84%;
+    }
+
+    .article button {
+        font-size: 1em;
+        background-color: #007bff;
+    }
+
+    #button {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        color: #fff;
+        border-radius: 64px;
+        padding: 2% 7%;
+        margin-top: 5%;
+    }
+
+    /* THIS IS JUST a reminder */
+
+    /*
+.article-images {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-images img {
+    max-width: 100%;
+    height: auto;
+} */
+
+    .article-images {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        padding-right: 20%;
+    }
+
+    .article-images img {
+        max-width: 100%;
+        height: auto;
+        margin-top: -20%;
+        position: relative;
+        z-index: 1;
+        transform: scale(1.5);
+    }
+
+    #img1 img {
+        margin-top: 0;
+        z-index: 2;
+    }
+
+    #button-1 {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        color: #fff;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    #img1::after {
+        transform: scale(1.5);
+        left: 90%;
+    }
+
+    body:has(#modeToggle:checked) #img1::after {
+        transform: scale(1.5);
+        top: 10%;
+        left: 90%;
+    }
+
+    #img2::before {
+        transform: scale(1.5);
+        top: 70%;
+        left: -40%;
+    }
+
+    body:has(#modeToggle:checked) #img2::before {
+        content: url("./assets/txt2-dark.png");
+    }
+
+    /* PICTURES SECTION */
+
+    .pictures {
+        text-align: center;
+        position: relative;
+        margin-top: 10%;
+    }
+
+    #pictures-subtitle {
+        font-size: 4em;
+        text-align: center;
+        font-weight: normal;
+        padding: 10% 0% 3% 0%;
+    }
+
+    #pic-subtitle {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        font-weight: bold;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 3rem;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .h3-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 36%;
+    }
+
+    #yoga-a-light,
+    #yoga-a-dark,
+    #yoga-c-light,
+    #yoga-c-dark {
+        padding-left: 10%;
+    }
+
+    #yoga-b-light,
+    #yoga-b-dark,
+    #yoga-d-light,
+    #yoga-d-dark {
+        padding-right: 10%;
+    }
+
+    /* PART 1 */
+
+    .pictures1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .pictures1-images {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .pictures1-images img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* PART 2 */
+
+    .pictures2 {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2%;
+    }
+
+    /* SUBSCRIBE SECTION */
+
+    .subscribe {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        border-radius: 20px;
+        color: white;
+        text-align: center;
+        padding: 2%;
+        margin: 10% 10%;
+    }
+
+    #paragraph-button {
+        color: gray;
+        font-size: 0.8rem;
+    }
+
+    #subscribe-subtitle {
+        font-size: 2.5em;
+        font-weight: normal;
+        margin: 3% 0;
+    }
+
+    #subscribe-paragraph {
+        padding: 0% 10%;
+        width: 70%;
+        margin: 0 15%;
+    }
+
+    #subscribe-button {
+        display: inline-flex;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 64px;
+        margin: 0 0;
+        max-width: 500px;
+        margin: 5% 0;
+        width: 40%;
+        padding: 1% 2%;
+    }
+
+    #subscribe-button p {
+        margin: 0 20px 0 0;
+    }
+
+    #subscribe-button button {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        color: #fff;
+        border-radius: 64px;
+        vertical-align: middle;
+        margin: 1% 1%;
+        padding: 3% 6%;
+    }
+
+    #button-container {
+        padding-left: 30%;
+        width: 15vw;
+    }
+
+    /* FOOTER SECTION */
+
+    footer {
+        background-color: #14092A;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #footer-subtitle {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        font-weight: bold;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        /* CSS per l' applicazione del colore DIVERSIFICATO al subtile */
+
+
+        text-align: left;
+        margin-right: 40%;
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+
+    #footer-text {
+        margin-right: 40%;
+    }
+
+    .footer-1 {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5%;
+        margin-bottom: 7%;
+
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 10%;
+    }
+
+    .grid-item {
+        color: white;
+        text-align: left;
+        font-size: 1.2rem;
+        margin-bottom: 7%;
+    }
+
+    .grid-item-text {
+        color: #A197B4;
+        text-align: left;
+        font-size: 0.8rem;
+        width: 70%;
+    }
+
+    #footer-hr {
+        border: 0;
+        height: 1px;
+        background-color: #A197B4;
+    }
+
+    .footer-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 7%;
+        padding-bottom: 5%;
+        padding-inline-start: 0;
+    }
+
+    .footer-social {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-social li {
+        margin: 0 10px;
+    }
+
+    .footer-2 p {
+        margin: 0;
+        color: #A197B4;
+        font-size: 0.938rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #14092A;
+        }
+
+        #pictures-subtitle {
+            color: #d1c0f1;
+        }
+
+        .article {
+            color: #d1c0f1;
+        }
+    }
 }
